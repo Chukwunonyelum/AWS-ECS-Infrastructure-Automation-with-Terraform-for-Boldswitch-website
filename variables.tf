@@ -61,3 +61,53 @@ variable "private_data_subnet_az2_cidr" {
     type = string
   
 }
+
+
+#security groups variables
+variable "ssh_location" {
+    description = "this ip address can ssh into the server"
+    type = string
+  
+}
+
+
+#rds variables
+variable "database_snapshot_identifier" {
+    description = "database snapshot identifier name"
+    type = string
+  
+}
+
+variable "database_instance_class" {
+    description = "data base instance type"
+    type = string
+  
+}
+
+variable "database_instance_identifier" {
+    description = "database instance identifier"
+    type = string
+  
+}
+
+
+variable "multi_az_deployment" {
+    description = "create a standby db instance"
+    type = bool
+  
+}
+
+
+#acm variables
+variable "domain_name" {
+    description = "domain name"
+    type = string
+  
+}
+
+
+variable "alternative_names" {
+    description = "sub domain name"
+    type = string
+  
+}
